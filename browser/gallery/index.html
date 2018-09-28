@@ -36,31 +36,5 @@
     </div>
   </article>
 </body>
+<script src="./js/script.js" type="text/javascript"></script>
 </html>
-
-<script>
-    const currentPhoto = document.getElementById('currentPhoto');
-    const imgs = ['i/breuer-building.jpg','i/guggenheim-museum.jpg','i/headquarters.jpg','i/IAC.jpg','i/new-museum.jpg'];
-    let i = 0;
-    function next() {
-        currentPhoto.src = imgs[i];
-        i ++;
-        if (i > imgs.length - 1) {
-            i = 0;
-        }
-    }
-
-    function prev() {
-        currentPhoto.src = imgs[i];
-        i --;
-        if (i < 0) {
-            i = imgs.length - 1;
-        }
-    }
-
-    const prevPhoto = document.getElementById('prevPhoto');
-    prevPhoto.onclick = prev;
-
-    const nextPhoto = document.getElementById('nextPhoto');
-    nextPhoto.onclick = next;
-</script>

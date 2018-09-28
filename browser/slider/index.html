@@ -32,18 +32,5 @@
     </div>
   </section>
 </body>
+<script src="./js/script.js" type="text/javascript"></script>
 </html>
-<script>
-    const imgs = ["i/airmax-jump.png", "i/airmax-on-foot.png", "i/airmax-playground.png", "i/airmax-top-view.png", "i/airmax.png"];
-    const img = document.getElementById("slider");
-    let i = 0;
-    function showImg() {
-        img.src = imgs[i];
-        i++;
-        if (i > imgs.length - 1) {
-            i = 0;
-        }
-    }
-    setInterval(showImg, 5000);
-
-</script>
