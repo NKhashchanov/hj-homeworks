@@ -35,13 +35,5 @@
   	</li>
   </ul>
 </body>
+<script src="./js/script.js" type="text/javascript"></script>
 </html>
-<script>
-	const drums = document.getElementsByClassName('drum-kit__drum');
-    const play = document.getElementsByTagName('audio');
-	for (let i = 0; i < drums.length; i++) {
-        drums[i].onclick = function() {
-            play[i].play();
-        }
-	}
-</script>
